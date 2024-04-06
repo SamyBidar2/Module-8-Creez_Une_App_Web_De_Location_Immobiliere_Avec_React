@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  width: Hug (309px)px;
+  height: Hug (34px)px;
+  top: 17px;
+  left: 931px;
+  gap: 57px;
+  opacity: 0px;
+  border-color: blue;
+  border-style: solid;
+
+
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34.22px;
+  text-align: right;
+
+  color: rgba(0, 0, 0, 1);
+
+  &a {}
+
+
+}
