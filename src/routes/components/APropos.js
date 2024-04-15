@@ -1,4 +1,4 @@
-export const A_Propos = () => {
+export const APropos = () => {
     return (
         <div>A Propos</div>
     )
