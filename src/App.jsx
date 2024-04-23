@@ -1,17 +1,18 @@
 //import logo from './logo.svg';
 
-import { Routes, Route} from 'react-router-dom';
-import { Home } from './routes/components/Home';
-import { APropos } from './routes/components/APropos';
-import { FicheLogement } from './routes/components/FicheLogement';
-import { Erreur404 } from './routes/components/Erreur404';
-import { Header } from './routes/components/Header';
-import { Footer } from './routes/components/Footer/Footer';
+import { Routes, Route, BrowserRouter} from 'react-router-dom';
+import { Home } from './pages/Home';
+import { APropos } from './pages/APropos';
+import { FicheLogement } from './pages/FicheLogement';
+import { Erreur404 } from './pages/Erreur404';
+import { Header } from './components/Header/Header';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
   return (
    
-    <>
+    
+    <BrowserRouter>
       <Header />
       <Routes>
         <Route path ='/' element={<Home />} />
@@ -21,7 +22,7 @@ function App() {
         <Route path ="*" element={<Erreur404 />} />
       </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
     
   );
 }

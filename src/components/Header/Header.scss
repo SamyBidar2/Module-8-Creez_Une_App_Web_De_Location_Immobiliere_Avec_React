@@ -1,0 +1,30 @@
+
+.Header{
+  display: flex;
+  width: 100%;
+  height: 68px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 720.678px;
+  flex-shrink: 0;
+  margin: 0;
+
+    nav {
+      display: flex;
+      align-items: flex-start;
+      gap: 57px;
+      margin: 0;      
+    
+      a {
+        width: 136px;
+        color: #000;
+        text-align: right;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 34.224px;
+        text-decoration-line: none;
+      }
+    }
+  }
