@@ -1,5 +1,3 @@
-//import logo from './logo.svg';
-
 import { Routes, Route, BrowserRouter} from 'react-router-dom';
 import { Home } from './pages/Home';
 import { APropos } from './pages/APropos';
@@ -7,6 +5,7 @@ import { FicheLogement } from './pages/FicheLogement';
 import { Erreur404 } from './pages/Erreur404';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
+
 
 function App() {
   return (
@@ -17,15 +16,14 @@ function App() {
       <Routes>
         <Route path ='/' element={<Home />} />
         <Route path ='A_Propos' element={<APropos />} />
-        <Route path ='Fiche_Logement/:id' element={<FicheLogement />} /> 
-        {/* Passe le paramèrte Id dans l'url */}
-        <Route path ="*" element={<Erreur404 />} />
+        <Route path ='Fiche_Logement/:id' element={<FicheLogement />} />  
+        <Route path ="*" element={<Erreur404 />} />{/* Passe le paramèrte Id dans l'url */}
       </Routes>
       <Footer />
     </BrowserRouter>
     
   );
 }
-//import { Form } from 'react-router-dom';
+
 
 export default App;

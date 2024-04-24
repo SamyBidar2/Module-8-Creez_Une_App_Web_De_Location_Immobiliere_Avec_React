@@ -7,8 +7,8 @@ export const Header = () => {
         <div className="Header">
             <img src={logo} alt="Logo Kasa"/>
             <nav>
-                <NavLink to='/'>Acceuil</NavLink>
-                <NavLink to='/A_Propos'>A_Propos </NavLink>
+                <NavLink to='/'>Accueil</NavLink>
+                <NavLink to='/A_Propos'>A Propos </NavLink>
             </nav>
         </div>
     )

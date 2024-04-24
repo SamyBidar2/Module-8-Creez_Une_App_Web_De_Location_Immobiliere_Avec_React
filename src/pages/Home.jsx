@@ -1,5 +1,10 @@
+import { Banner } from "../components/Banner";
+import banner from '../images/HomeBanner.png';
+
 export const Home = () => {
     return (
-        <div>Acceuil</div>
+        <>
+        <Banner homebanner={banner} title={"Chez vous, partout et ailleurs"} />
+        </>
     )
 }
