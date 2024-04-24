@@ -9,6 +9,12 @@
   flex-shrink: 0;
   margin-bottom: 50px;
 
+    img{
+      //width: 210.322px;
+      height: 68px;
+      flex-shrink: 0;
+    }
+
     nav {
       display: flex;
       align-items: flex-start;
