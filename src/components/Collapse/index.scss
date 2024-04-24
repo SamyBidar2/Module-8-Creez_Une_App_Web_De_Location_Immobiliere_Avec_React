@@ -1,0 +1,110 @@
+.collapse{
+    width: 1023px;
+    position: relative;
+
+
+    .topbar{
+        display: flex;
+        padding: 10px 20px 10px 15px;
+        align-items: center;
+        border-radius: 5px;
+        background: var(--Red, #FF6060);
+        
+
+        .collapsetitle{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1 0 0;
+            align-self: stretch;
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 142.6%; /* 34.224px */
+        }
+
+        #arrow{
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+            rotate:-180deg;
+        }
+
+        //Animations de la flèche au clic
+        @keyframes ArrowUptoDown {
+            from {
+                transform: rotate(0deg); 
+            }
+            to {
+                transform: rotate(180deg); 
+            }
+        }
+
+        .updown {
+            animation: ArrowUptoDown 0.5s ease forwards; 
+        }
+
+        @keyframes ArrowDowntoUp {
+            from {
+                transform: rotate(180deg); 
+            }
+            to {
+                transform: rotate(0deg); 
+            }
+        }
+
+        .downup {
+            animation: ArrowDowntoUp 0.5s ease forwards; 
+        }
+    }
+
+    #textcontainer{
+        display: flex;
+        align-items: flex-start;
+        box-sizing: border-box;
+        padding: 20px;
+        border-radius: 5px 5px 10px 10px;
+        background: var(--Gray, rgba(246, 246, 246, 0.45));     
+        color: #000;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 142.6%; /* 25.668px */
+        overflow: hidden;
+        
+    }
+
+    //Animations de l'apparition du texte'
+     @keyframes ShowText {
+        from {
+            height:0; 
+            padding: 0;
+        }
+        to {
+            height:auto;
+            padding: 20px;
+        }
+    }
+    .showtext {
+            animation: ShowText 0.3s ease forwards;        
+    }
+
+    @keyframes HideText {
+        from {
+            height:auto;
+            padding: 20px;
+
+        }
+        to {
+            height:0; 
+            padding: 0;    
+        }
+    }
+    .hidetext {
+            animation: HideText 0.3s ease forwards;        
+    }
+    
+}
