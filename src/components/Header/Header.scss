@@ -8,9 +8,10 @@
   gap: 720.678px;
   flex-shrink: 0;
   margin-bottom: 50px;
+  box-sizing: border-box;
 
     img{
-      //width: 210.322px;
+      width: 210.322px;
       height: 68px;
       flex-shrink: 0;
     }
@@ -22,7 +23,7 @@
       margin: 0;      
     
       a {
-        width: 136px;
+        width: 116px;
         color: #000;
         text-align: right;
         font-family: Montserrat;
