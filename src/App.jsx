@@ -16,8 +16,10 @@ function App() {
       <Routes>
         <Route path ='/' element={<Home />} />
         <Route path ='A_Propos' element={<APropos />} />
-        <Route path ='Fiche_Logement/:id' element={<FicheLogement />} />  
-        <Route path ="*" element={<Erreur404 />} />{/* Passe le paramèrte Id dans l'url */}
+        <Route path ='Fiche_Logement' element={<FicheLogement />} />
+        {/*<Route path ='Fiche_Logement/:id' element={<FicheLogement />} />  {/* Passe le paramèrte Id dans l'url */}
+        
+        <Route path ="*" element={<Erreur404 />} />
       </Routes>
       <Footer />
     </BrowserRouter>

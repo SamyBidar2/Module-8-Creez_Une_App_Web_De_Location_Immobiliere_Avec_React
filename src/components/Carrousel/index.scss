@@ -1,0 +1,29 @@
+.background{
+    width: 1240px;
+    height: 415px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: lightgray 50% / cover no-repeat;
+    border-color: aqua;
+    border-style: solid;
+    position: relative;
+
+    .arrow{
+        position: absolute;
+        top: 50%;
+        width: 46.68px;
+        height: 79.2px;
+        flex-shrink: 0;
+        
+    }
+    .left{
+        left: 23px;
+    }
+
+    .right{
+        right: 23px;
+    }
+  
+            
+    
+}

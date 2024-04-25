@@ -17,7 +17,7 @@ export const Collapse = ({Collapsetitle,Collapsetext}) => {
         <div className='collapse'>
             <div className='topbar'>
                 <div className='collapsetitle'>{Collapsetitle}</div>
-                    <img id='arrow' className={arrowUp ? 'updown showtext': 'downup HideText'} src={arrow} alt='arrow' onClick={handleClick}/>
+                <img id='arrow' className={arrowUp ? 'updown showtext': 'downup HideText'} src={arrow} alt='arrow' onClick={handleClick}/>
             </div>
             <div id='textcontainer' className={arrowUp ? 'hidetext': 'showtext'} >{Collapsetext}</div>
         </div>
