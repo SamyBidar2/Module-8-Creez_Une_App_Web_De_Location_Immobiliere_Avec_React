@@ -9,6 +9,7 @@ import rightArrow from '../../images/rightArrow.png'
 export const Slideshow = ({id}) => {
     const [slide, setSlide] = useState(0);
 
+    //fonctions pour changer de slide
     const nextSlide = () => {
         setSlide(slide === pictures.length -1 ? 0 : slide + 1)
     };
@@ -17,7 +18,8 @@ export const Slideshow = ({id}) => {
         setSlide(slide === 0 ? pictures.length -1 : slide -1)
     };
     
-    const place = logementdatas.find(data => data.id === id); //permet de trouver dans le fichier Json l'élément par son id
+    //permet de trouver dans le fichier Json l'élément par son id
+    const place = logementdatas.find(data => data.id === id); 
     const pictures = place.pictures;
 
     return (
@@ -26,8 +28,8 @@ export const Slideshow = ({id}) => {
                 
                 {pictures.map((picture, index) => (
                     <img 
-                        className={slide === index ? "slide" : "slide  slide-hidden"} 
-                        key={index} 
+                        className={slide === index ? "slide" : "slide  slide-hidden"} //Si le slide n'a pas la même valeur que l'index, on le masque
+                        key={`${place.id}-${index}`}
                         src={picture} 
                         alt={place.title} 
                     />
@@ -42,16 +44,3 @@ export const Slideshow = ({id}) => {
     )
 }
 
-
-
-// export const Carousel = ({cover, title}) => {
-//     return (
-//         <div className='carousel'>
-//              {logementdatas.map((datas, id) =>
-//             ( <img key={id} src={datas.cover} alt={datas.title} />))}
-//             <img className='slide' src={cover} alt={title} />
-//             <img className='arrow left' src={leftArrow} alt='leftarrow'/>
-//             <img className='arrow right' src={rightArrow} alt='righttarrow'/>
-//         </div>
-//     )
-// }

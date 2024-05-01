@@ -1,11 +1,14 @@
 import { NavLink } from "react-router-dom";
+import logementdatas from '../../datas/Logementdatas.json'
 import './index.scss'
 
-export const Card = () => {
+export const Card = ({id}) => {
+    const place = logementdatas.find(data => data.id === id);
+   
     return (
-        // <div className='card'>
-        <NavLink to='/Fiche_Logement' className='card'>
-            <div className='loctitle'>Titre de la location</div>
+        <NavLink to={`/Fiche_Logement/${id}`} className='card'>
+            <div className='loctitle'>{place.title}</div>
+            <img src={place.cover} alt={place.title} />
         </NavLink>
     )
 }

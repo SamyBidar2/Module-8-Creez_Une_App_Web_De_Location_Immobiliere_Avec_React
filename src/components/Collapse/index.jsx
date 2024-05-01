@@ -3,7 +3,8 @@ import arrow from '../../images/arrow.png';
 import { useState } from 'react';
 
 
-export const Collapse = ({Collapsetitle,Collapsetext}) => {
+
+export const Collapse = ({Collapsetitle,Collapsetext,Size}) => {
 
     const [arrowUp,setArrowUp] = useState(true);
     
@@ -14,7 +15,8 @@ export const Collapse = ({Collapsetitle,Collapsetext}) => {
     }
     
     return (
-        <div className='collapse'>
+        // {`${size} main ${type}`}
+        <div className={`collapse ${Size}`}>
             <div className='topbar'>
                 <div className='collapsetitle'>{Collapsetitle}</div>
                 <img id='arrow' className={arrowUp ? 'updown showtext': 'downup HideText'} src={arrow} alt='arrow' onClick={handleClick}/>

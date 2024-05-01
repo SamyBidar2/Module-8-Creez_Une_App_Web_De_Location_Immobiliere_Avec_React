@@ -1,7 +1,5 @@
-.collapse{
-    width: 1023px;
+.collapse{    
     position: relative;
-
 
     .topbar{
         display: flex;
@@ -107,4 +105,15 @@
             animation: HideText 0.3s ease forwards;        
     }
     
+}
+
+//classespour gérer la taille du composant collapse, utilisé avec la prop Size
+.large{
+    width: 1023px;
+}
+.medium{
+    width: 582px;
+}
+.small{
+    width: 335px;
 }

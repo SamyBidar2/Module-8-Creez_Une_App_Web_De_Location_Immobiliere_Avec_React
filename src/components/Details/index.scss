@@ -15,3 +15,10 @@
     font-weight: 500;
     line-height: 142.6%; /* 25.668px */
 }
+
+.collapse-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 76px;
+}
