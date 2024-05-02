@@ -1,24 +1,56 @@
-.place-title{
-    color: #FF6060;
-    font-family: Montserrat;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 142.6%; /* 51.336px */
+.details-container{
+    position:relative;
+    padding-top: 30px;
+    box-sizing: border-box;
+
+    #hostandtitle{
+        display:flex;
+        justify-content: space-between;
+
+        .title-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        
+            .place-title{
+                color: #FF6060;
+                font-family: Montserrat;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 142.6%; /* 51.336px */
+            }
+            
+            .place-location{
+                color: #000;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 142.6%; /* 25.668px */
+            } 
+        }
+    }
+
+    #tagsandrating{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    
+    // .host{
+    // position:absolute;
+    // top:0;
+    // }   
+    
+    .collapse-container{
+        display: flex;
+        flex-direction: row;
+        align-items:flex-start;
+        gap: 76px;
+    }
 }
 
-.place-location{
-    color: #000;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 142.6%; /* 25.668px */
-}
 
-.collapse-container{
-    display: flex;
-    flex-direction: row;
-    align-items:flex-start;
-    gap: 76px;
-}
