@@ -8,6 +8,12 @@
     gap: 139px; 
     margin: 89px 0px 89px 0px;
 
+    @media (max-width: 768px) {
+        gap: 113px; 
+        margin: 63px 0px 63px 0px;
+    }
+
+
     .E404{
         display: flex;
         width: 597px;
@@ -21,6 +27,12 @@
         font-style: normal;
         font-weight: 700;
         line-height: 142.6%; /* 410.688px */
+        
+        @media (max-width: 768px) {
+            width: 198px;
+            height: 99px;
+            font-size: 96px;  
+        }
     }
 
     p{
@@ -34,6 +46,11 @@
         line-height: 142.6%; /* 51.336px */
         padding: 0;
         margin: 0;
+
+        @media (max-width: 768px) {
+            width: 260px; 
+            font-size: 18px;  
+        }
     }
     
     a{
@@ -45,5 +62,11 @@
         font-weight: 500;
         line-height: 142.6%; /* 25.668px */
         text-decoration-line: underline;
+        
+        @media (max-width: 768px) {
+            width: 221px; 
+            font-size: 14px; 
+            margin-bottom: 63px;
+        }
     }
 }
