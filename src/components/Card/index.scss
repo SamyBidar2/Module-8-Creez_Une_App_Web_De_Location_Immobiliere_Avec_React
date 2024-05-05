@@ -12,6 +12,10 @@
         flex-shrink: 0;
         border-radius: 10px;
         object-fit: cover;
+
+        @media (max-width: 375px) {
+            height: 255px;
+        }
     }
 
     .loctitle{

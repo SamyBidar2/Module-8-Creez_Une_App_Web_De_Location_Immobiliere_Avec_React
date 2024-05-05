@@ -4,12 +4,21 @@
     flex-shrink: 0;
     border-radius: 25px;
     background: lightgray 50% / cover no-repeat;
-    // border-color: aqua;
-    // border-style: solid;
     position: relative;
     display: flex;  
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 375px) {
+        width: 335px;
+        height: 111px;
+        border-radius: 10px;
+        border: 1px solid #000;
+        opacity: 0.6;
+        background: #000;
+        mix-blend-mode: darken;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      }
 
     .slide{
         width: 100%;
@@ -17,6 +26,12 @@
         flex-shrink: 0;
         border-radius: 25px;
         object-fit: cover ; 
+
+        @media (max-width: 375px) {
+            width: 335px;
+            height: 111px;
+            border-radius: 10px;
+          }
     }
     .slide-hidden{
         display:none;
