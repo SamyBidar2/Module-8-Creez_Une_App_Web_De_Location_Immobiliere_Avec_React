@@ -24,7 +24,6 @@ export const Slideshow = ({id}) => {
 
     return (
         <div className='carousel'>
-                <img className='arrow left' src={leftArrow} alt='leftarrow' onClick={prevSlide}/>
                 
                 {pictures.map((picture, index) => (
                     <img 
@@ -34,12 +33,18 @@ export const Slideshow = ({id}) => {
                         alt={place.title} 
                     />
                 ))}
-    
-                <img className='arrow right' src={rightArrow} alt='righttarrow' onClick={nextSlide}/>
-    
-                <span className='slidenumber'>
-                    {`${slide + 1}/${pictures.length}`}
-                </span> 
+                
+                {pictures.length > 1 ? 
+                    <>
+                    <img className='arrow left' src={leftArrow} alt='leftarrow' onClick={prevSlide}/>
+                    <img className='arrow right' src={rightArrow} alt='righttarrow' onClick={nextSlide}/>
+                    <span className='slidenumber'>
+                        {`${slide + 1}/${pictures.length}`}
+                    </span> 
+                    </>
+                    :
+                    null
+                }    
             </div>      
     )
 }

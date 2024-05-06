@@ -7,7 +7,7 @@ export const Cardlist = () => {
     return (
         <div className='cardlist'>
             {logementdatas.map((data, index) => (
-            <Card key={`${data.id}-${index}`} id={data.id}/>))}
+            <Card key={`${data.id}-${index}`} logement={data}/>))}
             {/* <Card />
             <Card />
             <Card />

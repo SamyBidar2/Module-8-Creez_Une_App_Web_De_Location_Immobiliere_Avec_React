@@ -21,8 +21,18 @@ export const Collapse = ({Collapsetitle,Collapsetext,Size}) => {
                 <div className='collapsetitle'>{Collapsetitle}</div>
                 <img id='arrow' className={arrowUp ? 'updown showtext': 'downup HideText'} src={arrow} alt='arrow' onClick={handleClick}/>
             </div>
-            <div id='textcontainer' className={arrowUp ? 'hidetext': 'showtext'} >{Collapsetext}</div>
+            <div id='textcontainer' className={arrowUp ? 'hidetext': 'showtext'} >
+                {
+                Array.isArray(Collapsetext) ? 
+                Collapsetext.map((element, index) => (<li>{element}</li>))
+                :
+                Collapsetext}
+            </div>
         </div>
         
     )
 }
+
+// {tags.map((tag, index) => (
+//     <div className='tag' key= {`${place.id}-${index}`}> {tag} </div>
+// ))}
