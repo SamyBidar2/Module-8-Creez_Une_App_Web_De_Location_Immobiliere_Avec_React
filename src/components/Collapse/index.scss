@@ -1,5 +1,6 @@
 .collapse{    
     position: relative;
+    width: 100%;
 
     .topbar{
         display: flex;
@@ -72,7 +73,11 @@
         font-weight: 400;
         line-height: 142.6%; /* 25.668px */
         overflow: hidden;
-        
+        flex-direction: column;
+
+        li{
+            list-style: none;
+        }
     }
 
     //Animations de l'apparition du texte'
@@ -109,7 +114,7 @@
 
 //classespour gérer la taille du composant collapse, utilisé avec la prop Size
 .large{
-    width: 1023px;
+    width: 1024px;
 }
 .medium{
     width: 582px;

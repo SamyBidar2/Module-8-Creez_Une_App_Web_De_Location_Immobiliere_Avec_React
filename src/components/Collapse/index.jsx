@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 
 
-export const Collapse = ({Collapsetitle,Collapsetext,Size}) => {
+export const Collapse = ({Collapsetitle,Collapsetext}) => {
 
     const [arrowUp,setArrowUp] = useState(true);
     
@@ -15,8 +15,8 @@ export const Collapse = ({Collapsetitle,Collapsetext,Size}) => {
     }
     
     return (
-        // {`${size} main ${type}`}
-        <div className={`collapse ${Size}`}>
+        // <div className={`collapse ${Size}`}>
+        <div className='collapse'>
             <div className='topbar'>
                 <div className='collapsetitle'>{Collapsetitle}</div>
                 <img id='arrow' className={arrowUp ? 'updown showtext': 'downup HideText'} src={arrow} alt='arrow' onClick={handleClick}/>
@@ -24,7 +24,7 @@ export const Collapse = ({Collapsetitle,Collapsetext,Size}) => {
             <div id='textcontainer' className={arrowUp ? 'hidetext': 'showtext'} >
                 {
                 Array.isArray(Collapsetext) ? 
-                Collapsetext.map((element, index) => (<li>{element}</li>))
+                Collapsetext.map((element, index) => (<li key={`${index}-${element}`}>{element}</li> ))
                 :
                 Collapsetext}
             </div>
@@ -32,7 +32,3 @@ export const Collapse = ({Collapsetitle,Collapsetext,Size}) => {
         
     )
 }
-
-// {tags.map((tag, index) => (
-//     <div className='tag' key= {`${place.id}-${index}`}> {tag} </div>
-// ))}

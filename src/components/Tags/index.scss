@@ -1,10 +1,16 @@
 .tags-container{
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     gap:10px;
     padding-top: 20px;
     padding-bottom: 24px;
     box-sizing: border-box;
+    
+
+    // @media screen and (min-width: 375px) and (max-width: 768px) {
+    //     width: 335px;
+    // }
 }
 
 .tag{
@@ -27,4 +33,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: 142.6%; /* 19.964px */
+
+    @media screen and (min-width: 375px) and (max-width: 768px) {
+        font-size: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }

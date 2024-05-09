@@ -15,6 +15,12 @@ gap:10px;
         font-style: normal;
         font-weight: 500;
         line-height: 142.6%; /* 25.668px */
+
+        @media screen and (min-width: 375px) and (max-width: 768px) {
+            width: 60px;
+            height: 33px;
+            font-size: 12px;
+        }
     }
 
     img{
@@ -22,5 +28,10 @@ gap:10px;
         height: 64px;
         flex-shrink: 0;
         border-radius: 50%;
+
+        @media screen and (min-width: 375px) and (max-width: 768px) {
+            width: 32px;
+            height: 32px;
+        }
     }
 }

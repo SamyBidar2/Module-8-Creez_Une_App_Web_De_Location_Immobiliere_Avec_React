@@ -14,17 +14,21 @@ export const Details = ({place}) => {
                         <div className='place-title'>{place.title}</div>
                         <div className='place-location'>{place.location}</div>
                     </div>
-                    <Host placeHost={place.host}/>
+                    {/* <Host placeHost={place.host}/> */}
                 </div>
                 
                 <div id='tagsandrating'>
                     <Tags placeTag={place.tags}/>
-                    <Rating placeRating={place.id}/>
+                    <div className='host-rating-container'>
+                        <Host placeHost={place.host}/>
+                        <Rating placeRating={place.id}/>
+                    </div>
+                    
                 </div>
                     
                 <div className='collapse-container'>
-                    <Collapse Collapsetitle={"Description"} Collapsetext={place.description} Size={'medium'}/>
-                    <Collapse Collapsetitle={"Équipements"} Collapsetext={place.equipments} Size={'medium'}/>
+                    <Collapse Collapsetitle={"Description"} Collapsetext={place.description} />
+                    <Collapse Collapsetitle={"Équipements"} Collapsetext={place.equipments} />
                 </div>
             </div>
     )
