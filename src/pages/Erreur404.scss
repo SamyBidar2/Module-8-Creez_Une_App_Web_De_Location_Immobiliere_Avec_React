@@ -10,18 +10,18 @@
 
     @media screen and (min-width: 375px) and (max-width: 768px) {
         gap: 113px; 
-        margin: 63px 0px 63px 0px;
+        margin: 43px 0px 83px 0px;
     }
 
 
     .E404{
         display: flex;
+        justify-content: center;
         width: 597px;
         height: 263px;
-        flex-direction: column;
-        flex-shrink: 0;
         color: #FF6060;
         text-align: center;
+        align-items: center;
         font-family: Montserrat;
         font-size: 288px;
         font-style: normal;
@@ -36,6 +36,8 @@
     }
 
     p{
+        display: flex;
+        justify-content: center;
         width: 872px;
         color: #FF6060;
         text-align: center;
@@ -49,11 +51,14 @@
 
         @media screen and (min-width: 375px) and (max-width: 768px) {
             width: 260px; 
-            font-size: 18px;  
+            font-size: 18px;
+            flex-wrap: wrap;
         }
     }
     
     a{
+        display: flex;
+        justify-content: center;
         width: 284px;
         color: #000;
         font-family: Montserrat;
@@ -66,7 +71,6 @@
         @media screen and (min-width: 375px) and (max-width: 768px) {
             width: 221px; 
             font-size: 14px; 
-            margin-bottom: 63px;
         }
     }
 }

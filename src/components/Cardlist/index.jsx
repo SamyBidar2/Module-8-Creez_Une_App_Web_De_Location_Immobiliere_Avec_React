@@ -8,12 +8,6 @@ export const Cardlist = () => {
         <div className='cardlist'>
             {logementdatas.map((data, index) => (
             <Card key={`${data.id}-${index}`} logement={data}/>))}
-            {/* <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card /> */}
         </div>
     )
 }

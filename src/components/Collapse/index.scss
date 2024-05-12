@@ -9,6 +9,11 @@
         border-radius: 5px;
         background: var(--Red, #FF6060);
         
+        @media screen and (min-width: 375px) and (max-width: 768px) {
+            // height:30px;
+            padding: 10px;
+        }
+    
 
         .collapsetitle{
             display: flex;
@@ -22,6 +27,10 @@
             font-style: normal;
             font-weight: 700;
             line-height: 142.6%; /* 34.224px */
+
+            @media screen and (min-width: 375px) and (max-width: 768px) {
+                font-size: 13px;
+            }
         }
 
         #arrow{
@@ -29,6 +38,10 @@
             height: 32px;
             flex-shrink: 0;
             rotate:-180deg;
+            @media screen and (min-width: 375px) and (max-width: 768px) {
+                width: 25px;
+                height: 25px;
+            }
         }
 
         //Animations de la flèche au clic
@@ -74,6 +87,11 @@
         line-height: 142.6%; /* 25.668px */
         overflow: hidden;
         flex-direction: column;
+
+        @media screen and (min-width: 375px) and (max-width: 768px) {
+            font-size: 12px;
+            padding: 15px;
+        }
 
         li{
             list-style: none;

@@ -6,11 +6,11 @@ import './index.scss'
 export const Rating = ({placeRating}) => {
 
     const stars = [];
-    for (let i = 1; i <= 5; i++) {
-        const starClass = i <= placeRating.rating ? 'stars rated' : 'stars';
-        stars.push(<FontAwesomeIcon key={i} id={`star${i}`} className={starClass} icon={faStar} />);
+    for (let i = 0; i <= 4; i++) {
+        const starClass = i <= placeRating ? 'stars rated' : 'stars';
+        stars[i]=(<FontAwesomeIcon key={i} id={`star${i}`} className={starClass} icon={faStar}/>);
     }
-    console.log('nombre etoile = '+placeRating.rating)
+    console.log('nombre etoile = '+placeRating)
 
     return (
         <div className='stars-container'>

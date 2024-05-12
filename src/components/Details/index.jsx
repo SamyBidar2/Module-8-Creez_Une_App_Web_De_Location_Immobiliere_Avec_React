@@ -21,7 +21,7 @@ export const Details = ({place}) => {
                     <Tags placeTag={place.tags}/>
                     <div className='host-rating-container'>
                         <Host placeHost={place.host}/>
-                        <Rating placeRating={place.id}/>
+                        <Rating placeRating={place.rating}/>
                     </div>
                     
                 </div>
