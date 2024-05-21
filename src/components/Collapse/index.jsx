@@ -15,7 +15,6 @@ export const Collapse = ({Collapsetitle,Collapsetext}) => {
     }
     
     return (
-        // <div className={`collapse ${Size}`}>
         <div className='collapse'>
             <div className='topbar'>
                 <div className='collapsetitle'>{Collapsetitle}</div>

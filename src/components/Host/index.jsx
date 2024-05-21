@@ -1,4 +1,3 @@
-// import logementdatas from '../../datas/Logementdatas.json'
 import './index.scss'
 
 export const Host = ({placeHost}) => {

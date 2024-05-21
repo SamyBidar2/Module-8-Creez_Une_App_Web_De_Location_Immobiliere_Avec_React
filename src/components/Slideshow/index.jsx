@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import logementdatas from '../../datas/Logementdatas.json'
 import './index.scss'
 import leftArrow from '../../images/leftArrow.png'
 import rightArrow from '../../images/rightArrow.png'

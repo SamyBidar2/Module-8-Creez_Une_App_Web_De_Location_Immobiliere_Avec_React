@@ -10,31 +10,16 @@ export const FicheLogement = () => {
 
     return (
         <>
-        { 
-        logement? 
-        <> 
-        <Slideshow place={logement}/> 
-        <Details place={logement}/>
+            { 
+            logement? 
+            <> 
+                <Slideshow place={logement}/> 
+                <Details place={logement}/>
+            </>
+            : 
+            <Navigate to="/Erreur404" replace={true} />
+            }   
         </>
-        : 
-        <Navigate to="/Erreur404" replace={true} />
-        }   
-        </>
-        //les composants prennent l'id de la location à afficher, présent dans le fichier json
+
     )
 }
-
-// return (
-//     <>
-//     { 
-//     place? 
-//     <> 
-//     <Slideshow id={id}/> 
-//     <Details id={id}/> 
-//     </>
-//     : 
-//     <Navigate to="/Erreur404" replace={true} />
-//     }   
-//     </>
-//     //les composants prennent l'id de la location à afficher, présent dans le fichier json
-// )
