@@ -4,9 +4,9 @@ import banner from '../images/AboutBanner.png';
 
 export const APropos = () => {
     return (
-        <>
-        <Banner homebanner={banner} />
-        <Collapselist />
-        </>
+        <div className="Container">
+            <Banner homebanner={banner} />
+            <Collapselist />
+        </div>
     )
 }

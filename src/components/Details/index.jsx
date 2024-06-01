@@ -13,7 +13,6 @@ export const Details = ({place}) => {
                         <div className='place-title'>{place.title}</div>
                         <div className='place-location'>{place.location}</div>
                     </div>
-                    {/* <Host placeHost={place.host}/> */}
                 </div>
                 
                 <div id='tagsandrating'>

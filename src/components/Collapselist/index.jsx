@@ -11,4 +11,3 @@ export const Collapselist = () => {
        </div> 
     )
 }
-// Size='large'

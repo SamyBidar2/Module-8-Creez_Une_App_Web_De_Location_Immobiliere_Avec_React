@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import './Erreur404.scss';
 
-
 export const Erreur404 = () => {
     return (
   

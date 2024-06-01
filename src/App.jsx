@@ -3,8 +3,8 @@ import { Home } from './pages/Home';
 import { APropos } from './pages/APropos';
 import { FicheLogement } from './pages/FicheLogement';
 import { Erreur404 } from './pages/Erreur404';
-import { Header } from './components/Header/Header';
-import { Footer } from './components/Footer/Footer';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 
 function App() {
